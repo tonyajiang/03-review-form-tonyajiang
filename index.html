@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Review Form</title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+  <h1>Review Form</h1>
+<form action = "http://kraigh.com/cse104/reviews.php" method = "POST">
+<fieldset>
+  <legend>User Info</legend>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" />
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" />
+</fieldset>
+<fieldset>
+  <legend>Review</legend>
+  <p>What did you have?<p>
+  <select name="menu" multiple="multiple">
+      <option value="steak" selected="selected">Steak</option>
+      <option value="chicken">Chicken</option>
+      <option value="vegetarian">Vegetarian</option>
+  </select>
+  <br/>
+  <p>How would you rank your experience?
+  <label> 1
+    <input type="radio" name="rating" value="1" checked="checked" />
+  </label>
+  <label> 2
+    <input type="radio" name="rating" value="2" />
+  </label>
+  <label> 3
+    <input type="radio" name="rating" value="3" />
+  </label>
+  <label> 4
+    <input type="radio" name="rating" value="4" />
+  </label>
+  <label> 5
+    <input type="radio" name="rating" value="5" />
+  </label>
+</p>
+<p> Were you greeted when you entered or left?
+  <label>Entered
+    <input type="checkbox" name="greeted[]" value="entered" checked="checked" />
+  </label>
+  <label>Exited
+    <input type="checkbox" name="greeted[]" value="exited" />
+  </label>
+</p>
+<p>Any additional comments?</p>
+  <textarea rows = "4" cols = "50" name = "comments">Your Comments Here</textarea>
+  <br/>
+  <input type="submit" value = "Submit Form" id = "submit"/>
+  </fieldset>
+  </form>
+</body>
+</html>

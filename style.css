@@ -1,0 +1,23 @@
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+h1{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 12px;
+}
+fieldset {
+  border-radius: 6px;
+  width: 28%;
+  margin: auto;
+}
+#submit{
+  float:right;
+  background-color: SlateGrey;
+  padding: 8px;
+  color: White;
+  border-radius: 6px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+}
